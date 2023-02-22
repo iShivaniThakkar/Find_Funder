@@ -71,7 +71,7 @@ namespace FindFunder.Core.Service
         {
             try
             {
-                var user = await _userRepository.GetUserById(userId);
+                //var user = await _userRepository.GetUserById(userId);
                 var userUpdate = await _userRepository.UpdateUser(userId, usermodel);
                 userUpdate.UpdateData(usermodel.FirstName, usermodel.LastName, usermodel.Email);
                 if (userUpdate == null)

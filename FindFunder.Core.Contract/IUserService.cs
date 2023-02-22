@@ -10,7 +10,7 @@ namespace FindFunder.Core.Contract
 
         Task<PagedList<User>> GetUserAsync(string searchTerm = null, int page = 1, int pageSize = 25);
 
-        Task<User> UpdateUserAsync(long userId, UserRequestModel student);
+        Task<User> UpdateUserAsync(long userId, User user);
 
         Task<User> GetIdByUserAsync(long userId);
     }
